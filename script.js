@@ -1,10 +1,10 @@
 // CC: Kennisclips van Arthur
-let toegangsLeeftijd = 18;
-let leeftijd = 20;
+let toegangsLeeftijd = 18
+let leeftijd = 20
 
 // Keuze met twee condities
 if(leeftijd >= toegangsLeeftijd){
-  console.log("Welkom");
+  console.log("Welkom")
 } else {
   console.log("Helaas je bent niet oud genoeg")
 }
@@ -28,8 +28,8 @@ let timerId = null //Wanneer een timerId null is, dan is die klaar, of moet die 
 
 
 function play() { //deze functie hebben we niet behandeld in de les en heb ik van CHATGPT
-  var audio = new Audio('oei.mp3');
-  audio.play();
+  var audio = new Audio('oei.mp3')
+  audio.play()
 }
 
 // Een functie is een blok code die een specifieke taak heeft en meestal een unieke naam toegewezen krijgt. Functies maakt het overzichtelijker en bondiger
@@ -42,15 +42,15 @@ function randomSquare() {
 // deze functie kies een random vierkant, waar promes in word gezet
 // Met Math.random word er een random vierkant gekozen van de 9.
 // Met Math.floor word het nummer naar beneden afgerond
-  let randomSquare = squares[Math.floor(Math.random() * 9)];
+  let randomSquare = squares[Math.floor(Math.random() * 9)]
 
 // met randomSquare.classlist word Promes in een van de 9 vierkanten gezet
 // ik wil meerdere waarden in een variable opslaan, dus maak ik gebruik van een array. Elke array heeft een volgnummer. het nummer komt niet boven de 8 uit want je begint met tellen bij 0 <- dit is de indexwaarde
 // het nummer komt niet boven de 8 uit want je begint met tellen bij 0
-  randomSquare.classList.add('promes');
+  randomSquare.classList.add('promes')
 
   hitPosition = randomSquare.id
-};
+}
 
 
 squares.forEach(square => {
@@ -59,10 +59,10 @@ squares.forEach(square => {
       result++
       score.textContent = result
       hitPosition = null //als je het resultaat hebt gehad begint die weer op 0
-      audio.play(); // hier wordt de audio afgespeeld
+      audio.play() // hier wordt de audio afgespeeld
     }
   })
-});
+})
 
 // Deze functie zorgt ervoor, dat Promes iedere 500 millie seconde per vierkant word verplaats.
 function movePromes() {
