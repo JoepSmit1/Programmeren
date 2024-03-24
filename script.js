@@ -11,7 +11,7 @@ if(leeftijd >= toegangsLeeftijd){
 //Met een constante wordt bedoeld dat de waarde van het veld niet meer kan veranderens
 const squares = document.querySelectorAll('.square')
 const mole = document.querySelector('.promes')
-const timeLeft = document.querySelector('#time-left')
+const timeLeft = document.querySelector('#tijd-over')
 const score = document.querySelector('#score')
 
 let result = 0
@@ -53,7 +53,7 @@ function countDown() {
  if (currentTime == 0) {
    clearInterval(countDownTimerId)
    clearInterval(timerId)
-   alert('GAME OVER! Je score is ' + result)
+   alert('GAME OVER! Your final score is ' + result)
  }
 
 }

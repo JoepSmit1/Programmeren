@@ -1,3 +1,17 @@
+body{
+    background-image: url(173724081-politie-auto-s-s-nachts-politie-auto-achter-een-auto-s-nachts-met-mist-achtergrond-911-noodhulp.jpg);
+    background-size: cover;
+}
+
+h1 {
+    color: white;
+}
+
+
+h2 {
+    color: white
+}
+
 .grid {
     width: 606px;
     height: 606px;
@@ -8,11 +22,11 @@
 .square {
     height: 200px;
     width: 200px;
-    border: solid black 1px;
+    border: solid white 1px;
 
 }
 
 .promes{
-    background-image: url("quincy-promes-11548370787wffce7bc8l.png");
+    background-image: url("svh19o1577041359.png");
     background-size: cover;
 }
