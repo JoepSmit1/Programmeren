@@ -26,6 +26,7 @@ let hitPosition
 let currentTime = 60 //Nummer
 let timerId = null //Wanneer een timerId null is, dan is die klaar, of moet die nog beginnen en dan start die opnieuw.
 
+
 function play() { //deze functie hebben we niet behandeld in de les en heb ik van CHATGPT
   var audio = new Audio('oei.mp3');
   audio.play();
@@ -46,7 +47,7 @@ function randomSquare() {
 // met randomSquare.classlist word Promes in een van de 9 vierkanten gezet
 // ik wil meerdere waarden in een variable opslaan, dus maak ik gebruik van een array. Elke array heeft een volgnummer. het nummer komt niet boven de 8 uit want je begint met tellen bij 0 <- dit is de indexwaarde
 // het nummer komt niet boven de 8 uit want je begint met tellen bij 0
-  randomSquare.classList.add('promes')
+  randomSquare.classList.add('promes');
 
   hitPosition = randomSquare.id
 };
@@ -87,13 +88,9 @@ function countDown() {
 
 let countDownTimerId = setInterval(countDown, 1000);
 
+// Bronnen
 // CC: Powerpoint slides op DLO
 // CC: ChatGPT
 // CC: Youtube Tutorial
 // CC: FreeCodeCamp.org
 // CC: Kennisclips van Arthur
-
-
-
-//Een variabele is een naam voor een veranderlijke waarde in het geheugen. De waarde die eraan wordt toegekend kan later veranderen. Die is variabel
-//Een constanste is een naam voor een onveranderlijke waarde in het geheugen. Na het toekennen van een waarde kan deze niet meer worden veranderd. Hij is constant

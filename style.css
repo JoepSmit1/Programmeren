@@ -4,20 +4,13 @@ body{
 }
 
 body, html {
-    height: 100%;
-    margin: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .container{
     text-align: center;
     color: white;
-}
-
-h1 {
-    padding-top: 300px;
 }
 
 .grid {
@@ -40,7 +33,4 @@ h1 {
     background-size: cover;
 }
 
-img{
-    width: 200px; /* Stel de breedte van de afbeelding in */
-    height: 200px;
-}
+
