@@ -1,3 +1,14 @@
+// Kennisclips van Arthur
+var toegangsLeeftijd = 18;
+var leeftijd = 20;
+
+if(leeftijd >= toegangsLeeftijd){
+  console.log("Welkom");
+} else {
+  console.log("Helaas je bent niet oud genoeg")
+}
+
+//Met een constante wordt bedoeld dat de waarde van het veld niet meer kan veranderens
 const squares = document.querySelectorAll('.square')
 const mole = document.querySelector('.promes')
 const timeLeft = document.querySelector('#time-left')
@@ -29,11 +40,11 @@ squares.forEach(square => {
   })
 })
 
-function moveMole() {
+function movePromes() {
   timerId = setInterval(randomSquare, 500)
 }
 
-moveMole()
+movePromes()
 
 function countDown() {
  currentTime--
@@ -42,9 +53,13 @@ function countDown() {
  if (currentTime == 0) {
    clearInterval(countDownTimerId)
    clearInterval(timerId)
-   alert('GAME OVER! Your final score is ' + result)
+   alert('GAME OVER! Je score is ' + result)
  }
 
 }
 
 let countDownTimerId = setInterval(countDown, 1000)
+
+// ChatGPT
+// Youtube Tutorial
+
